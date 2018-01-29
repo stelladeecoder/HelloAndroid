@@ -24,7 +24,7 @@
         android:id="@+id/View"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignBottom="@id/imageView"
         android:layout_marginBottom="178dp"
         android:background="#000080" />
 
@@ -32,6 +32,7 @@
         android:id="@+id/Udacity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/Latham"
         android:layout_centerHorizontal="true"
         android:text="Udacity"
         android:textColor="#FFFFFF"
@@ -41,28 +42,31 @@
         android:id="@+id/Latham"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/Udacity"
+        android:layout_above="@+id/Mountain"
         android:layout_centerHorizontal="true"
         android:text="2465 Latham St"
-        android:textSize="18dp"
-        android:textColor="#FFFFFF"/>
+        android:textColor="#FFFFFF"
+        android:textSize="24dp" />
+
     <TextView
+        android:id="@+id/Mountain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/Latham"
+        android:layout_above="@+id/number"
         android:layout_centerHorizontal="true"
         android:text="Mountain View, CA 94043"
-        android:textSize="18dp"
         android:textColor="#FFFFFF"
-        android:id ="@+id/Mountain"/>
+        android:textSize="24dp" />
+
     <TextView
+        android:id="@+id/number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/Mountain"
+        android:layout_marginBottom="24dp"
         android:text="650-555-5555"
-        android:textSize="18dp"
         android:textColor="#FFFFFF"
-        android:id ="@+id/number"/>
+        android:textSize="24dp" />
 
 </RelativeLayout>
