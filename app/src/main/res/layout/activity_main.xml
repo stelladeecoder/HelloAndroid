@@ -11,13 +11,22 @@
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
         android:src="@drawable/blue" />
+
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:src="@drawable/udacity" />
+        android:layout_height="match_parent"
+        android:src="@drawable/udacity"
+        android:scaleType="fitStart"
+        android:layout_margin="8dp"
+        android:id="@+id/imageView" />
+
+    <View
+        android:id="@+id/View"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_marginBottom="178dp"
+        android:background="#000080" />
 
     <TextView
         android:id="@+id/Udacity"
@@ -25,7 +34,8 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:text="Udacity"
-        android:textColor="#FFFFFF" />
+        android:textColor="#FFFFFF"
+        android:textSize="40dp" />
 
     <TextView
         android:id="@+id/Latham"
@@ -34,6 +44,7 @@
         android:layout_below="@+id/Udacity"
         android:layout_centerHorizontal="true"
         android:text="2465 Latham St"
+        android:textSize="18dp"
         android:textColor="#FFFFFF"/>
     <TextView
         android:layout_width="wrap_content"
@@ -41,6 +52,7 @@
         android:layout_below="@+id/Latham"
         android:layout_centerHorizontal="true"
         android:text="Mountain View, CA 94043"
+        android:textSize="18dp"
         android:textColor="#FFFFFF"
         android:id ="@+id/Mountain"/>
     <TextView
@@ -49,6 +61,7 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@id/Mountain"
         android:text="650-555-5555"
+        android:textSize="18dp"
         android:textColor="#FFFFFF"
         android:id ="@+id/number"/>
 
