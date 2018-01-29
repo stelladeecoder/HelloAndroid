@@ -5,28 +5,51 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-<ImageView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:src="@drawable/udacity"
-    android:layout_alignParentTop="true" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/blue" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/udacity" />
 
     <TextView
+        android:id="@+id/Udacity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:text="Udacity"
-        android:layout_alignParentBottom="true"/>
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/Latham"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Udacity"
+        android:layout_centerHorizontal="true"
+        android:text="2465 Latham St"
+        android:textColor="#FFFFFF"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="2465 Latham St" />
+        android:layout_below="@+id/Latham"
+        android:layout_centerHorizontal="true"
+        android:text="Mountain View, CA 94043"
+        android:textColor="#FFFFFF"
+        android:id ="@+id/Mountain"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mountain View, CA 94043" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="650-555-5555" />
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/Mountain"
+        android:text="650-555-5555"
+        android:textColor="#FFFFFF"
+        android:id ="@+id/number"/>
 
 </RelativeLayout>
